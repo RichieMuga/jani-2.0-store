@@ -16,8 +16,14 @@ const NavBar = () => {
             <div className={styles.navBarContent}>
                 <Link href={'/'}><Image src={logo} alt='Home' /></Link>
                 <section className={`dispFlex ${styles.search_ting}`}>
+                    <button type="submit" className={styles.filter_btn}>All <VscTriangleDown size={12} /></button>
+                    <input
+                        type='text'
+                        className={styles.search_bar}
+                        placeholder='Search for products...'
+                    />
 
-                    <input type='text' className={styles.search_bar} />
+
                     {/* // type={type}
                     // value={value}
                     // name={name}
@@ -27,10 +33,17 @@ const NavBar = () => {
 
                     <button type="submit" className={styles.search_btn}>Search</button>
                 </section>
-                <p className='paragraph'>Accounts <VscTriangleDown size={12} /></p>
-                <p className='paragraph'><IoIosHelpCircleOutline size={25} />Help <VscTriangleDown /></p>
+                <p className='paragraph'>
+                    Accounts <VscTriangleDown size={12} /></p>
+                <div className='paragraph dispFlex_aside'>
+                    <div className={styles.svgDiv} > <IoIosHelpCircleOutline size={28} /></div>
+                    <div>
+                        Help
+                        <VscTriangleDown size={12} />
+                    </div>
+                </div>
                 <section className='dispFlex'>
-                    <p className='paragraph'><BsCart size={25} /> Cart</p>
+                    <div className={styles.cart_icon}><BsCart size={25} /> Cart</div>
                 </section>
 
             </div>

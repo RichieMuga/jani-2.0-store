@@ -9,25 +9,21 @@ a {
 
 :root {
   /* primary colors  */
-  --purple-primary: #4d4a91;
-  --purple-light: #837df5;
-  --grey-textArea: #c4c4c4;
-  --deep-red: #cc3300;
-  --light-red: #ff9966;
-  --deep-blue: #02577a;
   --font-white: white;
   --font-black: #0000;
   --background-white: #e5f0fc;
-  --jungle-green: #00a877;
+  --green-theme: #00575d;
+  --orange-theme: #f58e47;
   --jungle-green-helper: #52ad2b;
   --deeper-red: #f62f30;
-  --light-green: #39ff14;
+  --deep-green: #003236;
   /* letter colors */
   --link-color: #0645ad;
   /* heights */
   --nav-height: 6rem;
   /* other properties*/
   --borderRadius: 5px;
+  --borderRadius2: 2px;
   --backgroundColor: #d3d3d3;
   --transition: 0.3s ease-in-out all;
   --fluid-width: 90vw;
@@ -69,6 +65,9 @@ h5 {
 .dispFlex {
   display: flex;
   justify-content: space-between;
+}
+.dispFlex_aside {
+  display: flex;
 }
 .paragraph {
   font-size: 1rem;
