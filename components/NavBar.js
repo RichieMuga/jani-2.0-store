@@ -1,9 +1,9 @@
 import styles from '../styles/NavBar.module.css'
-import FormRow from './FormRow';
+// import FormRow from './FormRow';
 import Image from 'next/image'
 import logo from '../public/Logo(1).svg'
 import Link from 'next/link';
-import { IoMdSearch } from "react-icons/io";
+// import { IoMdSearch } from "react-icons/io";
 import { VscTriangleDown } from "react-icons/vsc";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
