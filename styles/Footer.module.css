@@ -1,4 +1,61 @@
 .footer {
   position: absolute;
   bottom: 0;
+  height: 72%;
+  width: 100%;
+  background: var(--background-black);
+  border-top: solid 0.35em var(--orange-theme);
+}
+.btn_top {
+  width: 100%;
+  height: 10%;
+  background: var(--cool-dark-blue);
+  color: var(--font-white);
+  border: none;
+}
+.btn_top:hover {
+  cursor: pointer;
+  background-color: #202c3a;
+  opacity: 0.7;
+}
+.newsLetter {
+  color: var(--font-white);
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+}
+.textNsubscribe {
+  display: flex;
+  gap: 2em;
+}
+.newsLetterTitle {
+  text-align: center;
+  margin: 1em;
+}
+.btnNinput {
+  display: flex;
+  justify-content: center;
+  height: 2em;
+  margin-top: 0.7em;
+  gap: 0.5em;
+}
+.nws_btn {
+  background: var(--orange-theme);
+  width: 8em;
+  color: var(--font-white);
+  border: none;
+}
+.nws_btn:hover {
+  cursor: pointer;
+  background-color: #202c3a;
+  opacity: 0.7;
+}
+.links_heading {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 8em;
+}
+.links_individual {
+  color: var(--font-white);
 }
