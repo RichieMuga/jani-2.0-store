@@ -39,9 +39,9 @@ const Footer = () => {
                     <h4>Quick Links</h4>
                     {quickLinks.map((individualLinks) => {
                         return (
-                            <>
+                            <div key={individualLinks.id}>
                                 <p>{individualLinks.text}</p>
-                            </>
+                            </div>
                         )
                     })}
                 </div>
@@ -49,9 +49,9 @@ const Footer = () => {
                     <h4>Make money with us</h4>
                     {makeMoneyWithUs.map((individualLinks) => {
                         return (
-                            <>
+                            <div key={individualLinks.id}>
                                 <p>{individualLinks.text}</p>
-                            </>
+                            </div>
                         )
                     })}
                 </div>
@@ -59,18 +59,18 @@ const Footer = () => {
                     <h4>Let us help you</h4>
                     {letUsHelpYou.map((individualLinks) => {
                         return (
-                            <>
+                            <div key={individualLinks.id}>
                                 <p>{individualLinks.text}</p>
-                            </>
+                            </div>
                         )
                     })}
                 </div>
             </section>
             {/* socials section */}
             <section className="flex_kidogo">
-                <BsTwitter size={22} />
-                <BsFacebook size={22} />
-                <BsInstagram size={22} />
+                <BsTwitter size={22} color="#ffffff" />
+                <BsFacebook size={22} color="#ffffff" />
+                <BsInstagram size={22} color="#ffffff" />
             </section>
             {/* final footer section */}
             <section className='flex_kidogo'>

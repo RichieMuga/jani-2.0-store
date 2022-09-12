@@ -26,7 +26,9 @@ a {
   /* other properties*/
   --borderRadius: 5px;
   --borderRadius2: 2px;
-  --backgroundColor: #d3d3d3;
+  --backgroundColor: #ffffff;
+  --greyDefault: #d3d3d3;
+  --greyDefault2: #e6e6e6;
   --transition: 0.3s ease-in-out all;
   --fluid-width: 90vw;
   /* shadows */
@@ -74,12 +76,20 @@ h4 {
 .dispFlex_aside {
   display: flex;
 }
+.marginTop {
+  margin-top: 1em;
+}
+.background_fullWidth {
+  background: var(--greyDefault2);
+  width: 100%;
+  padding: 0 3em;
+}
 .flex_kidogo {
   display: flex;
   gap: 2em;
   justify-content: center;
   margin: 0 1em;
-  color: var(--font-white);
+  /* color: var(--font-white); */
 }
 .paragraph {
   font-size: 1rem;
@@ -90,6 +100,7 @@ h4 {
 }
 .smallP {
   font-size: 0.8em;
+  color: var(--font-white);
 }
 
 .btn-purple {

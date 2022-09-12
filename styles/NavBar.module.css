@@ -59,3 +59,11 @@
   opacity: 1;
   cursor: pointer;
 }
+
+.sectionLinks {
+  background: var(--greyDefault2);
+  width: 100%;
+}
+.Hearticon {
+  margin-top: 1.2em;
+}
