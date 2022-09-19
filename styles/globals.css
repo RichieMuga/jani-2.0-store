@@ -69,6 +69,11 @@ h4 {
   margin: 0;
 }
 
+.height_width_Product {
+  height: 210px;
+  width: 380px;
+}
+
 .dispFlex {
   display: flex;
   justify-content: space-between;

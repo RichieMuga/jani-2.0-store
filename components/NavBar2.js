@@ -8,6 +8,7 @@ const NavBar2 = () => {
     return (
         <div className='background_fullWidth'>
             <section>
+                {/* hambuger menu */}
                 <div className={styles2.line_line_1}></div>
                 <div className={styles2.line_line_2}></div>
                 <div className={styles2.line_line_3}></div>

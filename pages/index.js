@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import NavBar2 from '../components/NavBar2';
+import Banner from '../components/Banner'
 
 export default function Home() {
   return (
@@ -15,17 +16,9 @@ export default function Home() {
       </Head>
       <NavBar />
       <NavBar2 />
-      products
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
+      <Banner title={`Top deals`} />
+      <Banner title={`Explore popular categories`} />
+      <Banner title={`Popular Brands`} />
       {/* body of the project to be here */}
       <Footer />
     </div>
