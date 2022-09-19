@@ -34,6 +34,7 @@ const Products = () => {
                         <div key={product.id} className={style.individualProduct}>
                             <Image src={product.image} height={200} width={200} />
                             <p>{product.text.length ? product.text.slice(0, 25) + '...' : product.text}</p>
+
                         </div>
                     )
                 })}

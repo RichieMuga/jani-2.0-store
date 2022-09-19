@@ -19,7 +19,6 @@ const Banner = ({ title }) => {
             <section className={styles.data_round}>
 
             </section>
-
         </div>
     )
 }
