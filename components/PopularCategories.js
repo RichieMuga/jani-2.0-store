@@ -1,9 +1,10 @@
 import React from 'react'
-import Image from 'next/image';
 import style from '../styles/Product(s).module.css'
-import { products } from '../utils/MockProductsNcategories';
+import Image from 'next/image';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { popularCategories } from '../utils/MockProductsNcategories';
+
 
 const responsive = {
     superLargeDesktop: {
@@ -25,15 +26,16 @@ const responsive = {
     }
 };
 
-const TopDeals = () => {
+
+const PopularCategories = () => {
     return (
         <div>
             <Carousel className={style.carousel} responsive={responsive} slidesToSlide={2}>
-                {products.map((product) => {
+                {popularCategories.map((category) => {
                     return (
-                        <div key={product.id} className={style.individualProduct}>
-                            <Image src={product.image} alt='' height={150} width={150} />
-                            <p>{product.text.length >= 25 ? product.text.slice(0, 25) + '...' : product.text}</p>
+                        <div key={category.id} className={style.individualProduct}>
+                            {/* <Image src={category.image} alt='' height={150} width={150} /> */}
+                            <p>{category.text.length > 25 ? category.text.slice(0, 25) + '...' : category.text}</p>
                         </div>
                     )
                 })}
@@ -42,4 +44,4 @@ const TopDeals = () => {
     )
 }
 
-export default TopDeals
+export default PopularCategories

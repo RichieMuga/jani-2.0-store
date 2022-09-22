@@ -18,12 +18,12 @@ export const products = [
 ]
 
 export const popularCategories = [
-    { id: 1, category: 'shoes', path: '/api/v1/shoes' },
-    { id: 2, category: 'sports', path: '/api/v1/sports' },
-    { id: 3, category: 'smartPhones', path: '/api/v1/smartPhones' },
-    { id: 4, category: 'fashion', path: '/api/v1/fashion' },
-    { id: 5, category: 'Accessories', path: '/api/v1/Accessories' },
-    { id: 6, category: 'Electronics', path: '/api/v1/Electronics' }
+    { id: 1, text: 'Shoes', path: '/api/v1/shoes' },
+    { id: 2, text: 'Sports', path: '/api/v1/sports' },
+    { id: 3, text: 'SmartPhones', path: '/api/v1/smartPhones' },
+    { id: 4, text: 'Fashion', path: '/api/v1/fashion' },
+    { id: 5, text: 'Accessories', path: '/api/v1/Accessories' },
+    { id: 6, text: 'Electronics', path: '/api/v1/Electronics' }
 ]
 
 export const popularBrands = [

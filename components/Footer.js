@@ -29,9 +29,9 @@ const Footer = () => {
                     <h4>Get to know us</h4>
                     {getToKnowUslinks.map((individualLinks) => {
                         return (
-                            <>
+                            <div key={individualLinks.id}>
                                 <p>{individualLinks.text}</p>
-                            </>
+                            </div>
                         )
                     })}
                 </div>

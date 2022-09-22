@@ -17,8 +17,12 @@ export default function Home() {
       <NavBar />
       <NavBar2 />
       <Banner title={`Top deals`} />
+      {/* if banner title is top deals then display top deals products else dont */}
       <Banner title={`Explore popular categories`} />
+      {/* if banner title is Explore popular categories then display top deals products else dont */}
       <Banner title={`Popular Brands`} />
+      {/* if banner title is Popular Brands then display top deals products else dont */}
+
       {/* body of the project to be here */}
       <Footer />
     </div>
