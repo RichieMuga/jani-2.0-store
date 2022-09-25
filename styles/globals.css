@@ -19,6 +19,11 @@ a {
   --jungle-green-helper: #52ad2b;
   --deeper-red: #f62f30;
   --deep-green: #003236;
+  /* bright-theme colors */
+  --bright-green: #39f698;
+  --bright-blue: #319dd4;
+  --bright-red: #eb5f4d;
+  --bright-pink: #eb59b1;
   /* letter colors */
   --link-color: #0645ad;
   /* heights */

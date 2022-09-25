@@ -33,10 +33,11 @@ const PopularCategories = () => {
             <Carousel className={style.carousel} responsive={responsive} slidesToSlide={2}>
                 {popularCategories.map((category) => {
                     return (
-                        <div key={category.id} className={style.individualProduct}>
+                        <section key={category.id} className={style.individualProduct2}>
                             {/* <Image src={category.image} alt='' height={150} width={150} /> */}
-                            <p>{category.text.length > 25 ? category.text.slice(0, 25) + '...' : category.text}</p>
-                        </div>
+                            <div className={style.ppbrands_categories}></div>
+                            <p className={style.center_text}>{category.text.length > 25 ? category.text.slice(0, 25) + '...' : category.text}</p>
+                        </section>
                     )
                 })}
             </Carousel>

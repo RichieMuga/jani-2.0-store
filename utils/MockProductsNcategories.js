@@ -27,12 +27,12 @@ export const popularCategories = [
 ]
 
 export const popularBrands = [
-    { id: 1, text: '' },
-    { id: 2, },
-    { id: 3, },
-    { id: 4, },
-    { id: 5, },
-    { id: 6, }
+    { id: 1, text: 'eastwest fashion' },
+    { id: 2, text: 'Nivea' },
+    { id: 3, text: 'Nike' },
+    { id: 4, text: 'Garnier' },
+    { id: 5, text: 'Huawei' },
+    { id: 6, text: 'TagWood' }
 ]
 
 
