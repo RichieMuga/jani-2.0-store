@@ -73,6 +73,22 @@ h4 {
   color: var(--font-white);
   margin: 0;
 }
+/* bgColor For Backgrounds */
+.red {
+  background: var(--bright-red);
+}
+.green {
+  background: var(--bright-green);
+}
+.blue {
+  background: var(--bright-blue);
+}
+.pink {
+  background: var(--bright-pink);
+}
+.white {
+  background: var(--font-white);
+}
 
 .height_width_Product {
   height: 210px;

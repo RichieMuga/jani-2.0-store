@@ -35,7 +35,7 @@ const PopularCategories = () => {
                     return (
                         <section key={category.id} className={style.individualProduct2}>
                             {/* <Image src={category.image} alt='' height={150} width={150} /> */}
-                            <div className={style.ppbrands_categories}></div>
+                            <div className={style.ppbrands_categories + " " + category.bgColor}></div>
                             <p className={style.center_text}>{category.text.length > 25 ? category.text.slice(0, 25) + '...' : category.text}</p>
                         </section>
                     )

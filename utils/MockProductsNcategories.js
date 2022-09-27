@@ -18,21 +18,21 @@ export const products = [
 ]
 
 export const popularCategories = [
-    { id: 1, text: 'Shoes', path: '/api/v1/shoes' },
-    { id: 2, text: 'Sports', path: '/api/v1/sports' },
-    { id: 3, text: 'SmartPhones', path: '/api/v1/smartPhones' },
-    { id: 4, text: 'Fashion', path: '/api/v1/fashion' },
-    { id: 5, text: 'Accessories', path: '/api/v1/Accessories' },
-    { id: 6, text: 'Electronics', path: '/api/v1/Electronics' }
+    { id: 1, text: 'Shoes', path: '/api/v1/shoes', bgColor: "red" },
+    { id: 2, text: 'Sports', path: '/api/v1/sports', bgColor: "red" },
+    { id: 3, text: 'SmartPhones', path: '/api/v1/smartPhones', bgColor: "red" },
+    { id: 4, text: 'Fashion', path: '/api/v1/fashion', bgColor: "red" },
+    { id: 5, text: 'Accessories', path: '/api/v1/Accessories', bgColor: "red" },
+    { id: 6, text: 'Electronics', path: '/api/v1/Electronics', bgColor: "red" }
 ]
 
 export const popularBrands = [
-    { id: 1, text: 'eastwest fashion' },
-    { id: 2, text: 'Nivea' },
-    { id: 3, text: 'Nike' },
-    { id: 4, text: 'Garnier' },
-    { id: 5, text: 'Huawei' },
-    { id: 6, text: 'TagWood' }
+    { id: 1, text: 'eastwest fashion', bgColor: "green" },
+    { id: 2, text: 'Nivea', bgColor: "green" },
+    { id: 3, text: 'Nike', bgColor: "green" },
+    { id: 4, text: 'Garnier', bgColor: "green" },
+    { id: 5, text: 'Huawei', bgColor: "green" },
+    { id: 6, text: 'TagWood', bgColor: "green" }
 ]
 
 
