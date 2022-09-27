@@ -24,6 +24,9 @@ a {
   --bright-blue: #319dd4;
   --bright-red: #eb5f4d;
   --bright-pink: #eb59b1;
+  --bright-yellow: #e6d01c;
+  --bright-orange: #fea51e;
+  ---bright-brown: #b04215;
   /* letter colors */
   --link-color: #0645ad;
   /* heights */
@@ -85,6 +88,15 @@ h4 {
 }
 .pink {
   background: var(--bright-pink);
+}
+.yellow {
+  background: var(--bright-yellow);
+}
+.orange {
+  background: var(--bright-orange);
+}
+.brown {
+  background: var(--bright-orange);
 }
 .white {
   background: var(--font-white);

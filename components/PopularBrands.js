@@ -16,7 +16,7 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2
+        items: 3
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -31,8 +31,10 @@ const PopularBrands = () => {
                 {popularBrands.map((brand) => {
                     return (
                         <div key={brand.id} className={style.individualProduct}>
-                            {/* <Image src={brand.image} alt='' height={150} width={150} /> */}
-                            <p>{brand.text.length >= 25 ? brand.text.slice(0, 25) + '...' : brand.text}</p>
+                            <div className={style.ppbrands_categories + " " + brand.bgColor + " " + "flex_kidogo"}>
+                                <Image src={brand.image} alt='' height={180} width={130} />
+                            </div>
+                            <p className={style.center_text}>{brand.text.length >= 25 ? brand.text.slice(0, 25) + '...' : brand.text}</p>
                         </div>
                     )
                 })}

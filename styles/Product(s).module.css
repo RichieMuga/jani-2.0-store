@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1em 2em;
+  margin: 1em;
+  cursor: pointer;
 }
 
 .individualProduct2 {
@@ -19,6 +22,7 @@
   border-width: 1px;
   margin: 1.4em;
   border-color: var(--green-theme);
+  cursor: pointer;
 }
 
 /* .flex-gap {
@@ -31,7 +35,13 @@
   height: 6em;
   width: auto;
   border-radius: 25px;
+  padding: 1em;
 }
 .center_text {
   text-align: center;
+}
+.center_text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--link-color);
 }
