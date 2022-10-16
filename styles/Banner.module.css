@@ -10,7 +10,10 @@
 }
 .heading p {
   color: var(--font-white);
-  text-decoration: underline;
   font-size: large;
+}
+.heading p:hover {
+  text-decoration: underline;
+  color: var(--greyDefault);
   cursor: pointer;
 }

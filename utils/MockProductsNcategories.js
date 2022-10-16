@@ -18,16 +18,16 @@ import electronics from '../public/products/electronics-removebg-preview.png'
 
 
 export const products = [
-    { id: 1, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 2, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 3, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 4, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 5, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 6, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 7, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 8, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 9, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
-    { id: 10, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6" },
+    { id: 1, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 4 },
+    { id: 2, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 2 },
+    { id: 3, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 3 },
+    { id: 4, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 1 },
+    { id: 5, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 3 },
+    { id: 6, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 4 },
+    { id: 7, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: "none" },
+    { id: 8, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 3 },
+    { id: 9, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 3 },
+    { id: 10, image, text: "Smirnoff Smirnoff Ice Black Can - 330ml - Pack Of 6", price: 160, reviewStars: 1 },
 
 
 

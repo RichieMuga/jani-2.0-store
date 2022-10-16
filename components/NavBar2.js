@@ -13,13 +13,13 @@ const NavBar2 = () => {
                 <div className={styles2.line_line_2}></div>
                 <div className={styles2.line_line_3}></div>
             </section>
-            <section className={`flex_kidogo ${styles.sectionLinks}`}>
+            <section className={`flex_kidogo`}>
 
                 {navBar2.map((individualLink) => {
                     return (
                         <div key={individualLink.id} className='dispFlex_aside'>
                             <span className='marginTop'> {individualLink.icon}</span>
-                            <p>{individualLink.text}</p>
+                            <p className={`${styles.sectionLinks}`}>{individualLink.text}</p>
                         </div>
                     )
                 })}

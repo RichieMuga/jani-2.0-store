@@ -55,7 +55,15 @@
   display: flex;
   justify-content: center;
   gap: 8em;
+  padding: 2em;
 }
 .links_individual {
   color: var(--font-white);
+}
+.styles.hoverNlink {
+  color: green;
+}
+.styles.hoverNlink :hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -40,7 +40,7 @@ const Footer = () => {
                     {quickLinks.map((individualLinks) => {
                         return (
                             <div key={individualLinks.id}>
-                                <p>{individualLinks.text}</p>
+                                <p className={styles.hoverNlink}>{individualLinks.text}</p>
                             </div>
                         )
                     })}
@@ -50,7 +50,7 @@ const Footer = () => {
                     {makeMoneyWithUs.map((individualLinks) => {
                         return (
                             <div key={individualLinks.id}>
-                                <p>{individualLinks.text}</p>
+                                <p className={styles.hoverNlink}>{individualLinks.text}</p>
                             </div>
                         )
                     })}
@@ -60,7 +60,7 @@ const Footer = () => {
                     {letUsHelpYou.map((individualLinks) => {
                         return (
                             <div key={individualLinks.id}>
-                                <p>{individualLinks.text}</p>
+                                <p className={styles.hoverNlink}>{individualLinks.text}</p>
                             </div>
                         )
                     })}

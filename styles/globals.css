@@ -6,6 +6,7 @@ a {
 * {
   box-sizing: border-box;
 }
+/* 00575D */
 
 :root {
   /* primary colors  */
@@ -139,6 +140,25 @@ h4 {
 .smallP {
   font-size: 0.8em;
   color: var(--font-white);
+}
+.link {
+  text-align: start;
+}
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.price {
+  color: var(--green-theme);
+}
+.price:hover {
+  text-decoration: underline;
+}
+.wishlike {
+  color: var(--green-theme);
+  margin: auto 0;
 }
 
 .btn-purple {

@@ -9,6 +9,9 @@
   padding: 1em 2em;
   margin: 1em;
   cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--green-theme);
 }
 
 .individualProduct2 {
@@ -44,4 +47,32 @@
   cursor: pointer;
   text-decoration: underline;
   color: var(--link-color);
+}
+.linkSeeMore {
+  margin-left: 2em;
+  margin-bottom: 2em;
+  color: var(--green-theme);
+  font-size: medium;
+}
+.linkSeeMore:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--green-theme);
+}
+.linkSeeAll {
+  color: var(--font-white);
+  text-decoration: none;
+}
+.linkSeeAll:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--green-theme);
+}
+.flexOnProduct {
+  display: flex;
+  justify-content: space-between;
+}
+.stars {
+  color: var(--bright-yellow);
+  margin: 0;
 }
