@@ -2,17 +2,15 @@ import React from 'react'
 import { navBar2 } from '../utils/NavBar'
 import styles from '../styles/NavBar.module.css'
 import styles2 from '../styles/NavBarSecond.module.css'
+import SideBar from './SideBar'
 
 
 const NavBar2 = () => {
     return (
         <div className='background_fullWidth'>
-            <section>
-                {/* hambuger menu */}
-                <div className={styles2.line_line_1}></div>
-                <div className={styles2.line_line_2}></div>
-                <div className={styles2.line_line_3}></div>
-            </section>
+            <div>
+                <SideBar />
+            </div>
             <section className={`flex_kidogo`}>
 
                 {navBar2.map((individualLink) => {
