@@ -28,6 +28,8 @@ a {
   --bright-yellow: #e6d01c;
   --bright-orange: #fea51e;
   ---bright-brown: #b04215;
+  /* review colors */
+  --yellow-bright: #ffd800;
   /* letter colors */
   --link-color: #0645ad;
   /* heights */
@@ -38,6 +40,7 @@ a {
   --backgroundColor: #ffffff;
   --greyDefault: #d3d3d3;
   --greyDefault2: #e6e6e6;
+  --greyDefaultStrike: #75757a;
   --transition: 0.3s ease-in-out all;
   --fluid-width: 90vw;
   /* shadows */
@@ -102,6 +105,10 @@ h4 {
 .white {
   background: var(--font-white);
 }
+/* reviews css */
+.yellow_review {
+  color: var(--yellow-bright);
+}
 
 .height_width_Product {
   height: 210px;
@@ -130,9 +137,26 @@ h4 {
   margin: 0 1em;
   /* color: var(--font-white); */
 }
+.flex_kidogo2 {
+  display: flex;
+  gap: 9em;
+  justify-content: center;
+  margin: 0 1em;
+  /* color: var(--font-white); */
+}
 .paragraph {
   font-size: 1rem;
-  margin-top: 1.3em;
+  margin-top: 1.4em;
+}
+.paragraph:hover {
+  color: var(--green-theme);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cart:hover {
+  color: var(--green-theme);
+  text-decoration: underline;
+  cursor: pointer;
 }
 .page-padding {
   padding: 0 3em;
@@ -143,6 +167,7 @@ h4 {
 }
 .link {
   text-align: start;
+  margin: 0.6em 0;
 }
 .link:hover {
   cursor: pointer;
@@ -152,6 +177,11 @@ h4 {
 
 .price {
   color: var(--green-theme);
+}
+.priceStrikeThrough {
+  color: var(--greyDefaultStrike);
+  text-decoration: line-through;
+  margin: 0;
 }
 .price:hover {
   text-decoration: underline;

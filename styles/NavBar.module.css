@@ -74,6 +74,15 @@
 .Hearticon {
   margin-top: 1.2em;
 }
+.navBtn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 @media (max-width: 1090px) {
   .search_bar {
     width: 30em;

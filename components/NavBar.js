@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { VscTriangleDown } from "react-icons/vsc";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
+import { AiOutlineUser } from "react-icons/ai";
 
 
 const NavBar = () => {
@@ -33,16 +34,28 @@ const NavBar = () => {
 
                     <button type="submit" className={styles.search_btn}>Search</button>
                 </section>
-                <p className='paragraph'>
-                    Accounts <VscTriangleDown size={12} /></p>
-                <div className='paragraph dispFlex_aside'>
-                    <div className={styles.svgDiv} > <IoIosHelpCircleOutline size={28} /></div>
-                    <div>
-                        Help
-                        <VscTriangleDown size={12} />
+                {/* account btn */}
+                <button className={styles.navBtn}>
+                    <div className='paragraph dispFlex_aside'>
+                        <div className={styles.svgDiv} > <AiOutlineUser size={28} /></div>
+                        <div>
+                            Accounts
+                            <VscTriangleDown size={12} />
+                        </div>
                     </div>
-                </div>
-                <section className='dispFlex'>
+                </button>
+                {/* help btn */}
+                <button className={styles.navBtn}>
+                    <div className='paragraph dispFlex_aside'>
+                        <div className={styles.svgDiv} > <IoIosHelpCircleOutline size={28} /></div>
+                        <div>
+                            Help
+                            <VscTriangleDown size={12} />
+                        </div>
+                    </div>
+                </button>
+                {/* cart btn */}
+                <section className='cart dispFlex'>
                     <div className={styles.cart_icon}><BsCart size={25} /> Cart</div>
                 </section>
 

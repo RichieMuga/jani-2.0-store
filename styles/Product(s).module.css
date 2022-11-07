@@ -11,7 +11,9 @@
   cursor: pointer;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--green-theme);
+  border-color: rgba(0, 34.12, 36.47, 0.1);
+  border-radius: 3px;
+  box-shadow: var(--shadow-3);
 }
 
 .individualProduct2 {
@@ -24,8 +26,9 @@
   border-style: solid;
   border-width: 1px;
   margin: 1.4em;
-  border-color: var(--green-theme);
+  border-color: rgba(0, 34.12, 36.47, 0.1);
   cursor: pointer;
+  box-shadow: var(--shadow-2);
 }
 
 /* .flex-gap {
