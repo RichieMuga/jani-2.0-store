@@ -83,6 +83,14 @@
   cursor: pointer;
   outline: inherit;
 }
+
+.smallModal {
+  height: 180px;
+  width: 140px;
+  background: var(--font-white);
+  z-index: 1;
+  box-shadow: var(--shadow-3);
+}
 @media (max-width: 1090px) {
   .search_bar {
     width: 30em;

@@ -13,7 +13,10 @@
   border-width: 1px;
   border-color: rgba(0, 34.12, 36.47, 0.1);
   border-radius: 3px;
-  box-shadow: var(--shadow-3);
+  box-shadow: var(--shadow-2);
+}
+.individualProduct:hover {
+  box-shadow: var(--shadow-4);
 }
 
 .individualProduct2 {
@@ -29,6 +32,9 @@
   border-color: rgba(0, 34.12, 36.47, 0.1);
   cursor: pointer;
   box-shadow: var(--shadow-2);
+}
+.individualProduct2:hover {
+  box-shadow: var(--shadow-3);
 }
 
 /* .flex-gap {

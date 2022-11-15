@@ -8,9 +8,25 @@ import { VscTriangleDown } from "react-icons/vsc";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
+import AccountBtnClick from './AccountBtn/AccountBtnClick';
+import { useState } from 'react';
+
 
 
 const NavBar = () => {
+
+    const [handleAccount, sethandleAccount] = useState(false)
+    const [handleHelper, sethandleHelper] = useState(false)
+
+
+    const handleAccounts = (e) => {
+        e.preventDefault()
+        return <div className={styles.smallModal}>hi</div>
+    }
+    const handleHelp = (e) => {
+        e.preventDefault()
+        return console.log("help")
+    }
     return (
         <header className={styles.navBar}>
             <div className={styles.navBarDiv}></div>
@@ -35,7 +51,7 @@ const NavBar = () => {
                     <button type="submit" className={styles.search_btn}>Search</button>
                 </section>
                 {/* account btn */}
-                <button className={styles.navBtn}>
+                <button className={styles.navBtn} onClick={handleAccounts}>
                     <div className='paragraph dispFlex_aside'>
                         <div className={styles.svgDiv} > <AiOutlineUser size={28} /></div>
                         <div>
@@ -44,8 +60,10 @@ const NavBar = () => {
                         </div>
                     </div>
                 </button>
+                {/* <div className={styles.smallModal}>hi</div> */}
+
                 {/* help btn */}
-                <button className={styles.navBtn}>
+                <button className={styles.navBtn} onClick={handleHelp}>
                     <div className='paragraph dispFlex_aside'>
                         <div className={styles.svgDiv} > <IoIosHelpCircleOutline size={28} /></div>
                         <div>
