@@ -16,14 +16,3 @@ export const iconSlice = createSlice({
 export const { iconMoon, iconSun } = iconSlice.actions
 
 export default iconSlice.reducer
-
-// config the store 
-// const store = configureStore({
-//     reducer: {
-//         icon: iconslice.reducer
-//     }
-// })
-// export default the store
-// export default store
-// export the action
-// export const iconAction = iconslice.actions
