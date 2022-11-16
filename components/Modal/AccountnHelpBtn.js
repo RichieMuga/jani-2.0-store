@@ -2,10 +2,10 @@ import React from 'react'
 import styles from '../../styles//NavBar.module.css'
 
 
-const AccountBtnClick = () => {
+const AccountnHelpBtnClick = () => {
     return (
-        <div className={styles.smallModal}>accountBtnClick</div>
+        <div className={styles.smallModal}>account or help Btn props</div>
     )
 }
 
-export default AccountBtnClick
+export default AccountnHelpBtnClick

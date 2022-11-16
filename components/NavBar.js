@@ -8,20 +8,22 @@ import { VscTriangleDown } from "react-icons/vsc";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
-import AccountBtnClick from './AccountBtn/AccountBtnClick';
-import { useState } from 'react';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { changeHelpNAccountModal } from '../store/helpNaccountModal'
+// import { useState } from 'react';
+import AccountnHelpBtnClick from './Modal/AccountnHelpBtn';
 
 
 const NavBar = () => {
+    // get modal state from global store
+    const { isModalOpen } = useSelector((store) => store.modal)
 
-    const [handleAccount, sethandleAccount] = useState(false)
-    const [handleHelper, sethandleHelper] = useState(false)
+
 
 
     const handleAccounts = (e) => {
         e.preventDefault()
-        return <div className={styles.smallModal}>hi</div>
+
     }
     const handleHelp = (e) => {
         e.preventDefault()
