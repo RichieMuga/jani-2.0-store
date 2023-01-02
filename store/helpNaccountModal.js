@@ -3,16 +3,19 @@ import { createSlice } from '@reduxjs/toolkit'
 export const modalSlice = createSlice({
     name: "modal",
 
-    initialState: { isModalOpen: true },
+    initialState: {
+        isHelpDropdownOpen: false,
+        isAccountDropdownOpen: false
+
+    },
 
     reducers: {
-        changeHelpNAccountModal: state => { state.isModalOpen = !state.isModalOpen },
-
-
+        toggleHelp: state => { state.isHelpDropdownOpen = !state.isHelpDropdownOpen },
+        toggleAccount: state => { state.isAccountDropdownOpen = !state.isAccountDropdownOpen },
 
     }
 })
 
-export const { changeHelpNAccountModal } = modalSlice.actions
+export const { toggleAccount, toggleHelp } = modalSlice.actions
 
 export default modalSlice.reducer

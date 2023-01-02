@@ -9,31 +9,32 @@ import { IoIosHelpCircleOutline } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
 import { useDispatch, useSelector } from 'react-redux';
-import { changeHelpNAccountModal } from '../store/helpNaccountModal'
+import { toggleAccount, toggleHelp } from '../store/helpNaccountModal';
+// import { changeHelpNAccountModal } from '../store/helpNaccountModal'
 // import { useState } from 'react';
-import AccountnHelpBtnClick from './Modal/AccountnHelpBtn';
+import { BiHelpCircle } from "react-icons/bs";
+
 
 
 const NavBar = () => {
     // get modal state from global store
-    const { isModalOpen } = useSelector((store) => store.modal)
+    const { isHelpDropdownOpen, isAccountDropdownOpen } = useSelector((store) => store.modal)
 
-
-
-
+    const dispatch = useDispatch()
     const handleAccounts = (e) => {
         e.preventDefault()
+        dispatch(toggleAccount())
 
     }
     const handleHelp = (e) => {
         e.preventDefault()
-        return console.log("help")
+        dispatch(toggleHelp())
     }
     return (
         <header className={styles.navBar}>
             <div className={styles.navBarDiv}></div>
             <div className={styles.navBarContent}>
-                <Link href={'/'}><Image src={logo} alt='Home' /></Link>
+                <div className={styles.logo}><Link href={'/'}><Image src={logo} alt='Home' /></Link></div>
                 <section className={`dispFlex ${styles.search_ting}`}>
                     <button type="submit" className={styles.filter_btn}>All <VscTriangleDown size={12} /></button>
                     <input
@@ -53,30 +54,41 @@ const NavBar = () => {
                     <button type="submit" className={styles.search_btn}>Search</button>
                 </section>
                 {/* account btn */}
-                <button className={styles.navBtn} onClick={handleAccounts}>
-                    <div className='paragraph dispFlex_aside'>
-                        <div className={styles.svgDiv} > <AiOutlineUser size={28} /></div>
-                        <div>
-                            Accounts
-                            <VscTriangleDown size={12} />
-                        </div>
+                <section className={styles.dropdown}>
+                    <div className={styles.navBtn}>
+                        <button className={`accountNhelp dispFlex_aside ${styles.dropbtn}`}>
+                            <AiOutlineUser size={28} />
+                            <span>Accounts</span>
+                            <VscTriangleDown className={styles.dropDown} size={12} />
+                        </button>
                     </div>
-                </button>
-                {/* <div className={styles.smallModal}>hi</div> */}
+                    <div className={styles.dropdown_content}>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </section>
 
                 {/* help btn */}
-                <button className={styles.navBtn} onClick={handleHelp}>
-                    <div className='paragraph dispFlex_aside'>
-                        <div className={styles.svgDiv} > <IoIosHelpCircleOutline size={28} /></div>
-                        <div>
-                            Help
-                            <VscTriangleDown size={12} />
-                        </div>
+                <section className={styles.dropdown}>
+                    <div className={styles.navBtn}>
+                        <button className={`accountNhelp dispFlex_aside ${styles.dropbtn}`}>
+                            <IoIosHelpCircleOutline size={28} />
+                            <span>Help</span>
+                            <VscTriangleDown className={styles.dropDown} size={12} />
+                        </button>
                     </div>
-                </button>
+                    <div className={styles.dropdown_content}>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </section>
                 {/* cart btn */}
                 <section className='cart dispFlex'>
-                    <div className={styles.cart_icon}><BsCart size={25} /> Cart</div>
+                    <div className={styles.cart_icon}><BsCart size={25} />
+                        <p>Cart</p>
+                    </div>
                 </section>
 
             </div>

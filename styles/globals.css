@@ -80,6 +80,7 @@ h4 {
   color: var(--font-white);
   margin: 0;
 }
+
 /* bgColor For Backgrounds */
 .red {
   background: var(--bright-red);
@@ -144,9 +145,11 @@ h4 {
   margin: 0 1em;
   /* color: var(--font-white); */
 }
-.paragraph {
+.accountNhelp {
   font-size: 1rem;
-  margin-top: 1.4em;
+}
+.accountNhelp span {
+  padding-top: 0.44em;
 }
 .paragraph:hover {
   color: var(--green-theme);
@@ -393,6 +396,9 @@ h4 {
   /* left: 36px; */
   top: 76px;
 }
+.logo {
+  margin-bottom: 56px;
+}
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -451,4 +457,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.row {
+  display: flex;
 }
