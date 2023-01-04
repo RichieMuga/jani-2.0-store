@@ -8,32 +8,42 @@ import { VscTriangleDown } from "react-icons/vsc";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { BsCart } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleAccount, toggleHelp } from '../store/helpNaccountModal';
+import { VscPackage } from "react-icons/vsc";
+import { BiPhone } from "react-icons/bi";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
+
+import SideBar from './SideBar';
+
+
+
+
+
+// import { useDispatch, useSelector } from 'react-redux';
+// import { toggleAccount, toggleHelp } from '../store/helpNaccountModal';
 // import { changeHelpNAccountModal } from '../store/helpNaccountModal'
 // import { useState } from 'react';
-import { BiHelpCircle } from "react-icons/bs";
 
 
 
 const NavBar = () => {
     // get modal state from global store
-    const { isHelpDropdownOpen, isAccountDropdownOpen } = useSelector((store) => store.modal)
+    // const { isHelpDropdownOpen, isAccountDropdownOpen } = useSelector((store) => store.modal)
 
-    const dispatch = useDispatch()
-    const handleAccounts = (e) => {
-        e.preventDefault()
-        dispatch(toggleAccount())
+    // const dispatch = useDispatch()
+    // const handleAccounts = (e) => {
+    //     e.preventDefault()
+    //     dispatch(toggleAccount())
 
-    }
-    const handleHelp = (e) => {
-        e.preventDefault()
-        dispatch(toggleHelp())
-    }
+    // }
+    // const handleHelp = (e) => {
+    //     e.preventDefault()
+    //     dispatch(toggleHelp())
+    // }
     return (
         <header className={styles.navBar}>
             <div className={styles.navBarDiv}></div>
             <div className={styles.navBarContent}>
+                <SideBar />
                 <div className={styles.logo}><Link href={'/'}><Image src={logo} alt='Home' /></Link></div>
                 <section className={`dispFlex ${styles.search_ting}`}>
                     <button type="submit" className={styles.filter_btn}>All <VscTriangleDown size={12} /></button>
@@ -58,14 +68,15 @@ const NavBar = () => {
                     <div className={styles.navBtn}>
                         <button className={`accountNhelp dispFlex_aside ${styles.dropbtn}`}>
                             <AiOutlineUser size={28} />
-                            <span>Accounts</span>
+                            <span className={styles.iconText}>Accounts</span>
                             <VscTriangleDown className={styles.dropDown} size={12} />
                         </button>
                     </div>
                     <div className={styles.dropdown_content}>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <div className='btn-signIn-small'><button className={styles.button_31}>Sign In</button></div>
+                        <div className='small-underline'></div>
+                        <a href="#"><AiOutlineUser size={25} />Account</a>
+                        <a href="#"><VscPackage size={25} />Orders</a>
                     </div>
                 </section>
 
@@ -74,14 +85,13 @@ const NavBar = () => {
                     <div className={styles.navBtn}>
                         <button className={`accountNhelp dispFlex_aside ${styles.dropbtn}`}>
                             <IoIosHelpCircleOutline size={28} />
-                            <span>Help</span>
+                            <span className={styles.iconText}>Help</span>
                             <VscTriangleDown className={styles.dropDown} size={12} />
                         </button>
                     </div>
                     <div className={styles.dropdown_content}>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="#"> <BiPhone size={25} /> Contact Us</a>
+                        <a href="#"><AiOutlineMenuUnfold />Help Menu</a>
                     </div>
                 </section>
                 {/* cart btn */}
