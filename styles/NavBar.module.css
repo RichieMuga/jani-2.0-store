@@ -190,11 +190,22 @@
 .search_bar {
   width: 20em;
 }
+.mobileMenu {
+  display: none;
+}
+.sideBar {
+  display: none;
+}
 @media (max-width: 1090px) {
   .search_bar {
     width: 12em;
   }
   .iconText {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .sideBar {
+    display: block;
   }
 }

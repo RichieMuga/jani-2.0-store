@@ -43,7 +43,7 @@ const NavBar = () => {
         <header className={styles.navBar}>
             <div className={styles.navBarDiv}></div>
             <div className={styles.navBarContent}>
-                <SideBar />
+                <div className={styles.sideBar}><SideBar /></div>
                 <div className={styles.logo}><Link href={'/'}><Image src={logo} alt='Home' /></Link></div>
                 <section className={`dispFlex ${styles.search_ting}`}>
                     <button type="submit" className={styles.filter_btn}>All <VscTriangleDown size={12} /></button>

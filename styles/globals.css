@@ -389,87 +389,92 @@ h4 {
   border-radius: 10px;
   margin: 2em 0;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
-/* Position and sizing of burger button */
+
 .bm-burger-button {
-  position: absolute;
-  width: 30px;
-  height: 20px;
-  /* left: 36px; */
-  top: 76px;
-}
-.logo {
-  margin-bottom: 56px;
+  display: none;
 }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
+.bm-overlay {
+  display: none;
 }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #a90000;
-}
+@media (max-width: 800px) {
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    /* left: 36px; */
+    top: 26px;
+    /* padding: 0 0.5em; */
+    background: #0000;
+  }
+  .logo {
+    margin-bottom: 56px;
+  }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
 
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
 
-/*
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
-}
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
 
-/* General sidebar styles */
-.bm-menu {
-  background: var(--cool-dark-blue);
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-  margin-left: -3em;
-}
+  /* General sidebar styles */
+  .bm-menu {
+    background: var(--cool-dark-blue);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    margin-left: -3em;
+    margin-top: -20px;
+  }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
 
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-}
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
 
-/* Individual item */
-.bm-item {
-  display: inline-block;
-}
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
 
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
 
-.row {
-  display: flex;
+  .row {
+    display: flex;
+  }
 }

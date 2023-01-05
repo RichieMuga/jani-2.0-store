@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
 import Link from 'next/link';
-import { slide as Menu } from 'react-burger-menu'
-import style from '../styles/SideBar.module.css'
 
 const SideBar = () => {
     return (
@@ -19,7 +18,7 @@ const SideBar = () => {
                 Desserts
             </Link>
         </Menu>
-    )
-}
+    );
+};
 
 export default SideBar
