@@ -208,4 +208,36 @@
   .sideBar {
     display: block;
   }
+  .dropbtn {
+    padding: 0 0.4em;
+  }
+  .dropDown {
+    display: none;
+  }
+  /* .logo {
+    margin: 1em;
+    margin-right: -1em;
+  } */
+  .search_ting_bar {
+    display: none;
+  }
+  .dropdown {
+    font-size: small;
+  }
+  .navBar {
+    padding: 0 1em;
+  }
+  .helpBtn {
+    display: none;
+  }
+  .styles.accountBtn {
+    margin-top: 0.4em;
+  }
+  .accountBtn {
+    margin-top: 0.4em;
+    padding-left: 2.5em;
+  }
+  .quickLinksHeader {
+    display: none;
+  }
 }

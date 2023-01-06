@@ -13,6 +13,7 @@ import { BiPhone } from "react-icons/bi";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 
 import SideBar from './SideBar';
+import SearchBar from './SearchBar';
 
 
 
@@ -45,26 +46,9 @@ const NavBar = () => {
             <div className={styles.navBarContent}>
                 <div className={styles.sideBar}><SideBar /></div>
                 <div className={styles.logo}><Link href={'/'}><Image src={logo} alt='Home' /></Link></div>
-                <section className={`dispFlex ${styles.search_ting}`}>
-                    <button type="submit" className={styles.filter_btn}>All <VscTriangleDown size={12} /></button>
-                    <input
-                        type='text'
-                        className={styles.search_bar}
-                        placeholder='Search for products...'
-                    />
-
-
-                    {/* // type={type}
-                    // value={value}
-                    // name={name}
-                    // onChange={handleChange}
-                    // className={form_input}
-                    // placeholder={placeholder} */}
-
-                    <button type="submit" className={styles.search_btn}>Search</button>
-                </section>
+                <span className={styles.search_ting_bar}><SearchBar /></span>
                 {/* account btn */}
-                <section className={styles.dropdown}>
+                <section className={`${styles.dropdown} ${styles.accountBtn}`}>
                     <div className={styles.navBtn}>
                         <button className={`accountNhelp dispFlex_aside ${styles.dropbtn}`}>
                             <AiOutlineUser size={28} />
@@ -81,7 +65,7 @@ const NavBar = () => {
                 </section>
 
                 {/* help btn */}
-                <section className={styles.dropdown}>
+                <section className={`${styles.dropdown} ${styles.helpBtn}`}>
                     <div className={styles.navBtn}>
                         <button className={`accountNhelp dispFlex_aside ${styles.dropbtn}`}>
                             <IoIosHelpCircleOutline size={28} />
