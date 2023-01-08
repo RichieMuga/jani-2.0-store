@@ -41,6 +41,7 @@ a {
   --greyDefault: #d3d3d3;
   --greyDefault2: #e6e6e6;
   --greyDefaultStrike: #75757a;
+  --dim-grey: #a9a9a9;
   --transition: 0.3s ease-in-out all;
   --fluid-width: 90vw;
   /* shadows */
@@ -79,6 +80,10 @@ h5 {
 h4 {
   color: var(--font-white);
   margin: 0;
+}
+
+.no-overflow {
+  overflow: hidden;
 }
 
 /* bgColor For Backgrounds */

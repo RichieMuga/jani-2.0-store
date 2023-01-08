@@ -9,6 +9,7 @@
 .btn_top {
   width: 100%;
   height: 10%;
+  padding: 1em 0em;
   background: var(--cool-dark-blue);
   color: var(--font-white);
   border: none;
@@ -30,7 +31,7 @@
 }
 .newsLetterTitle {
   text-align: center;
-  margin: 1em;
+  margin-top: 1em;
 }
 .btnNinput {
   display: flex;
@@ -59,11 +60,21 @@
 }
 .links_individual {
   color: var(--font-white);
+  /* background: red; */
 }
-.styles.hoverNlink {
-  color: green;
-}
-.styles.hoverNlink :hover {
+.hoverNlink:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: var(--dim-grey);
+}
+.hoverNlink :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .textNsubscribe {
+    gap: 0;
+    flex-direction: column;
+  }
 }

@@ -3,18 +3,22 @@ import { getToKnowUslinks, quickLinks, makeMoneyWithUs, letUsHelpYou } from '../
 import { BsTwitter, BsFacebook, BsInstagram } from "react-icons/bs";
 import Image from 'next/image'
 import smallLogo from '../public/small_Logo.svg'
+import { animateScroll as scroll } from 'react-scroll'
 
 // BsTwitter
 
 const Footer = () => {
+    const handleBackTotop = () => {
+        scroll.scrollToTop({
+            smooth: true, // this value enables the smooth scrolling animation
+        })
+    }
     return (
         <div className={styles.footer}>
-            <button className={styles.btn_top} type="submit">Back to top</button>
+            <button onClick={handleBackTotop} className={styles.btn_top} type="submit">Back to top</button>
             {/* newsletter section */}
             <section className={styles.newsLetter}>
-                <div className={styles.newsLetterTitle}>
-                    <h4>NewsLetter</h4>
-                </div>
+                <h4 className={styles.newsLetterTitle}>NewsLetter</h4>
                 <div className={styles.textNsubscribe}>
                     <p>Subscribe to keep up with our great deals.</p>
                     <section className={styles.btnNinput}>
@@ -30,7 +34,7 @@ const Footer = () => {
                     {getToKnowUslinks.map((individualLinks) => {
                         return (
                             <div key={individualLinks.id}>
-                                <p>{individualLinks.text}</p>
+                                <p className={styles.hoverNlink}>{individualLinks.text}</p>
                             </div>
                         )
                     })}
@@ -74,7 +78,7 @@ const Footer = () => {
             </section>
             {/* final footer section */}
             <section className='flex_kidogo'>
-                <Image src={smallLogo}></Image>
+                <Image alt='Jani Store' src={smallLogo}></Image>
                 <p className='smallP'>	©  2022 jani.com</p>
             </section>
 
