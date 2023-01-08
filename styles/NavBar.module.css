@@ -152,9 +152,14 @@
   cursor: pointer;
 }
 
+.SearchBarPhone {
+  display: none;
+}
+
 .sectionLinks {
   background: var(--greyDefault2);
   width: 100%;
+  /* font-weight: 600; */
 }
 .sectionLinks:hover {
   background: var(--greyDefault2);
@@ -207,6 +212,15 @@
 @media (max-width: 800px) {
   .sideBar {
     display: block;
+  }
+  .SearchBarPhone {
+    display: inline-flex;
+  }
+  .center.center {
+    display: flex;
+    margin-bottom: 0.4em;
+
+    justify-content: center;
   }
   .dropbtn {
     padding: 0 0.4em;

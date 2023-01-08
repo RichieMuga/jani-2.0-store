@@ -8,8 +8,11 @@ import SearchBar from './SearchBar';
 
 const NavBar2 = () => {
     return (
-        <section>
-            <SearchBar />
+        <section className={styles.center}>
+            <div className={`${styles.SearchBarPhone} flex_kidogo`}>
+                <span className={styles.SearchBarPhone}><SearchBar /></span>
+            </div>
+
             <div className={`background_fullWidth ${styles.quickLinksHeader}`}>
                 <section className='flex_kidogo'>
 
